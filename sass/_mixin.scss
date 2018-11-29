@@ -1,0 +1,47 @@
+@mixin subhead-color($subhead-color: null, $span-bg: $subhead-color) {
+    $subhead-color: #6B863A !default;
+    $span-bg: $color-green !default;
+    .subhead {
+        color: $subhead-color;
+    }
+    span {
+        background: $span-bg;
+    }
+}
+
+@mixin masonry-txt-color($txt-color: null) {
+    $txt-color: $color-black !default;
+    .masonry {
+        color: $txt-color;
+    }
+}
+
+@mixin masonry-style($width: null, $height: $width, $border-radius: null) {
+    $width: 205px !default;
+    $height: $width !default;
+    $border-radius: 50% !default;
+    .masonry {
+        .item {
+            div {
+                width: $width;
+                height: $height;
+                margin: auto;
+                border-radius: $border-radius;
+                background-position: center center;
+                background-repeat: no-repeat;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
